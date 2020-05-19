@@ -1,19 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/edittext"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="262dp">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:contentDescription="@string/covid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/covid" />
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:contentDescription="@string/Caronavirus"
+        app:srcCompat="@drawable/covid"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/strings"
+        android:textColor="@color/pink"
+        android:textSize="30sp"
+        android:layout_margin="8dp"/>
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/lightblack" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:text="@string/string1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+</LinearLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cases"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/deaths"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/recovered"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/totalcases"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/totaldeaths"
+            android:textColor="@color/pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/totalrecovered"
+            android:textColor="@color/greendark"
+            android:textSize="20sp" />
+    </TableRow>
+</TableLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:text="@string/country"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+</LinearLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cases"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/deaths"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/recovered"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Ccases"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Cdeaths"
+            android:textColor="@color/pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Crecovered"
+            android:textColor="@color/greendark"
+            android:textSize="20sp" />
+    </TableRow>
+</TableLayout>
+</LinearLayout>
